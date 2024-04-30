@@ -23,7 +23,7 @@ public class Tutor {
         this.tutorId = tutorId;
         this.name = name;
         this.salary = salary;
-        this.teachingGroup = new ArrayList<Student>();
+        this.teachingGroup = new ArrayList<>();
     }
 
     public void addStudent(Student newStudent) {
@@ -31,8 +31,6 @@ public class Tutor {
     }
 
     public List<Student> getTeachingGroup() {
-/*         List<Student> unmodifiable = Collections.unmodifiableList(this.teachingGroup);
-        return unmodifiable; */
         return Collections.unmodifiableList(this.teachingGroup);
 
     }
